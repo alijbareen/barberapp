@@ -38,11 +38,11 @@ const switchNavigator = createSwitchNavigator({
     Signup: SignupScreen,
     Signin: SigninScreen,
   }),
-  mainFlow: createBottomTabNavigator({
-    //trackListFlow,
-    //TrackCreate: TrackCreateScreen,
-    Account: AccountScreen,
-  }),
+  // mainFlow: createBottomTabNavigator({
+  //trackListFlow,
+  //TrackCreate: TrackCreateScreen,
+  //   Account: AccountScreen,
+  //}),
 });
 
 const App = createAppContainer(switchNavigator);

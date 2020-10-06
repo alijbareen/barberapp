@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { View, StyleSheet } from 'react-native';
-import { NavigationEvents } from 'react-navigation';
-import { Context as AuthContext } from '../context/AuthContext';
-import AuthForm from '../components/AuthForm';
-import NavLink from '../components/NavLink';
+import React, { useContext } from "react";
+import { View, StyleSheet } from "react-native";
+import { NavigationEvents } from "react-navigation";
+import { Context as AuthContext } from "../context/AuthContext";
+import AuthForm from "../components/AuthForm";
+import NavLink from "../components/NavLink";
 
 const SignupScreen = ({ navigation }) => {
   const { state, signup, clearErrorMessage } = useContext(AuthContext);
@@ -12,7 +12,7 @@ const SignupScreen = ({ navigation }) => {
     <View style={styles.container}>
       <NavigationEvents onWillFocus={clearErrorMessage} />
       <AuthForm
-        headerText="Sign Up for Tracker"
+        headerText="Sign Up for BarberShop"
         errorMessage={state.errorMessage}
         submitButtonText="Sign Up"
         onSubmit={signup}
@@ -34,7 +34,7 @@ SignupScreen.navigationOptions = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: "center",
     marginBottom: 250,
   },
 });
