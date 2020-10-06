@@ -1,9 +1,9 @@
 import axios from "axios";
 import { AsyncStorage } from "react-native";
 
-let ROOT_URL;
+let url;
 if (__DEV__) {
-  url = "http://5fa02756d31c.ngrok.io";
+  url = "https://mybarbershop-7ec35.firebaseio.com";
 } else {
   url = "";
 }
